@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Shiny Counter</title>
+        <meta name="viewport" content="width=device-width">
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="styles.css">
+        <style>
+            @import url('https://fonts.cdnfonts.com/css/pokemon-solid');
+        </style>
+    </head>
+    <body>
+            <!--The Title -->
+        <header class = "header">
+        <h1 class = "title">Shiny Counter</h1>
+       </header> 
+            <!-- Where you will see the pokemon and counter -->
+       <div class = "grid">
+            <div class = "card">
+                <select name ="pokemon-name" id = "select">
+                    <option id ="dropdown" disabled selected>Select a Pokemon</option>
+                </select>
+                <h2 class = "pkmnName">Treecko</h2>
+                <img id ="pokemon-img" src = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/252.png">
+                <div class = "counter">
+                    <h3 class="tally">0</h3>
+                    <div class = "counterButtons">
+                        <button class = "button minus">&mdash;</li>
+                        <button class = "button reset">Reset</li>
+                        <button class = "button plus">+</li>
+                    </div>
+                </div>
+            </div> 
+            <div id="pokemon-list"> 
+
+            </div> 
+        </div>  
+    <script src="script.js"></script>
+    </body>
+</html>
